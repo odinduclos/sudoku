@@ -13,115 +13,124 @@
 			width: 50px;
 			height: 50px;
 		}
+		.red {
+			color: red;
+			font-weight: bold;
+		}
 	</style>
 	<script src='jquery.js'></script>
 </head>
 <body>
-	<table class="sudoku">
+		<table class="sudoku">
 		<tr>
 			<td data-x="0" data-y="0"></td>
-			<td data-x="1" data-y="0">5</td>
-			<td data-x="2" data-y="0">9</td>
+			<td data-x="1" data-y="0"></td>
+			<td data-x="2" data-y="0">4</td>
 			<td data-x="3" data-y="0"></td>
-			<td data-x="4" data-y="0">2</td>
-			<td data-x="5" data-y="0"></td>
-			<td data-x="6" data-y="0">4</td>
-			<td data-x="7" data-y="0">6</td>
-			<td data-x="8" data-y="0"></td>
+			<td data-x="4" data-y="0"></td>
+			<td data-x="5" data-y="0">6</td>
+			<td data-x="6" data-y="0"></td>
+			<td data-x="7" data-y="0"></td>
+			<td data-x="8" data-y="0">7</td>
 		</tr>
 		<tr>
-			<td data-x="0" data-y="1">1</td>
+			<td data-x="0" data-y="1"></td>
 			<td data-x="1" data-y="1"></td>
 			<td data-x="2" data-y="1"></td>
-			<td data-x="3" data-y="1">4</td>
+			<td data-x="3" data-y="1">1</td>
 			<td data-x="4" data-y="1"></td>
-			<td data-x="5" data-y="1">3</td>
-			<td data-x="6" data-y="1"></td>
+			<td data-x="5" data-y="1"></td>
+			<td data-x="6" data-y="1">2</td>
 			<td data-x="7" data-y="1"></td>
-			<td data-x="8" data-y="1">8</td>
+			<td data-x="8" data-y="1">5</td>
 		</tr>
 		<tr>
-			<td data-x="0" data-y="2">3</td>
+			<td data-x="0" data-y="2">1</td>
 			<td data-x="1" data-y="2"></td>
-			<td data-x="2" data-y="2"></td>
-			<td data-x="3" data-y="2"></td>
-			<td data-x="4" data-y="2">7</td>
-			<td data-x="5" data-y="2"></td>
-			<td data-x="6" data-y="2"></td>
+			<td data-x="2" data-y="2">9</td>
+			<td data-x="3" data-y="2">5</td>
+			<td data-x="4" data-y="2"></td>
+			<td data-x="5" data-y="2">7</td>
+			<td data-x="6" data-y="2">4</td>
 			<td data-x="7" data-y="2"></td>
-			<td data-x="8" data-y="2">2</td>
+			<td data-x="8" data-y="2">8</td>
 		</tr>
 
 		<tr>
-			<td data-x="0" data-y="3"></td>
-			<td data-x="1" data-y="3">3</td>
+			<td data-x="0" data-y="3">4</td>
+			<td data-x="1" data-y="3"></td>
 			<td data-x="2" data-y="3"></td>
-			<td data-x="3" data-y="3">8</td>
+			<td data-x="3" data-y="3"></td>
 			<td data-x="4" data-y="3"></td>
-			<td data-x="5" data-y="3">9</td>
+			<td data-x="5" data-y="3"></td>
 			<td data-x="6" data-y="3"></td>
 			<td data-x="7" data-y="3">2</td>
 			<td data-x="8" data-y="3"></td>
 		</tr>
 		<tr>
-			<td data-x="0" data-y="4">6</td>
+			<td data-x="0" data-y="4"></td>
 			<td data-x="1" data-y="4"></td>
-			<td data-x="2" data-y="4">5</td>
+			<td data-x="2" data-y="4">2</td>
 			<td data-x="3" data-y="4"></td>
 			<td data-x="4" data-y="4">6</td>
 			<td data-x="5" data-y="4"></td>
-			<td data-x="6" data-y="4">3</td>
-			<td data-x="7" data-y="4"></td>
-			<td data-x="8" data-y="4">7</td>
+			<td data-x="6" data-y="4"></td>
+			<td data-x="7" data-y="4">9</td>
+			<td data-x="8" data-y="4">3</td>
 		</tr>
 		<tr>
-			<td data-x="0" data-y="5"></td>
-			<td data-x="1" data-y="5">1</td>
+			<td data-x="0" data-y="5">9</td>
+			<td data-x="1" data-y="5"></td>
 			<td data-x="2" data-y="5"></td>
-			<td data-x="3" data-y="5">7</td>
+			<td data-x="3" data-y="5">2</td>
 			<td data-x="4" data-y="5"></td>
-			<td data-x="5" data-y="5">6</td>
+			<td data-x="5" data-y="5">3</td>
 			<td data-x="6" data-y="5"></td>
-			<td data-x="7" data-y="5">4</td>
-			<td data-x="8" data-y="5"></td>
+			<td data-x="7" data-y="5"></td>
+			<td data-x="8" data-y="5">6</td>
 		</tr>
 
 		<tr>
-			<td data-x="0" data-y="6">2</td>
-			<td data-x="1" data-y="6"></td>
-			<td data-x="2" data-y="6"></td>
+			<td data-x="0" data-y="6"></td>
+			<td data-x="1" data-y="6">8</td>
+			<td data-x="2" data-y="6">1</td>
 			<td data-x="3" data-y="6"></td>
-			<td data-x="4" data-y="6">1</td>
+			<td data-x="4" data-y="6"></td>
 			<td data-x="5" data-y="6"></td>
 			<td data-x="6" data-y="6"></td>
-			<td data-x="7" data-y="6"></td>
-			<td data-x="8" data-y="6">4</td>
+			<td data-x="7" data-y="6">5</td>
+			<td data-x="8" data-y="6"></td>
 		</tr>
 		<tr>
-			<td data-x="0" data-y="7">9</td>
+			<td data-x="0" data-y="7">7</td>
 			<td data-x="1" data-y="7"></td>
-			<td data-x="2" data-y="7"></td>
+			<td data-x="2" data-y="7">5</td>
 			<td data-x="3" data-y="7">3</td>
 			<td data-x="4" data-y="7"></td>
 			<td data-x="5" data-y="7">2</td>
 			<td data-x="6" data-y="7"></td>
 			<td data-x="7" data-y="7"></td>
-			<td data-x="8" data-y="7">5</td>
+			<td data-x="8" data-y="7">4</td>
 		</tr>
 		<tr>
-			<td data-x="0" data-y="8"></td>
-			<td data-x="1" data-y="8">7</td>
-			<td data-x="2" data-y="8">8</td>
-			<td data-x="3" data-y="8"></td>
-			<td data-x="4" data-y="8">6</td>
+			<td data-x="0" data-y="8">6</td>
+			<td data-x="1" data-y="8"></td>
+			<td data-x="2" data-y="8"></td>
+			<td data-x="3" data-y="8">9</td>
+			<td data-x="4" data-y="8"></td>
 			<td data-x="5" data-y="8"></td>
-			<td data-x="6" data-y="8">2</td>
-			<td data-x="7" data-y="8">3</td>
+			<td data-x="6" data-y="8">1</td>
+			<td data-x="7" data-y="8"></td>
 			<td data-x="8" data-y="8"></td>
 		</tr>
 	</table>
 </body>
 <script>
+	$(".sudoku tr td").each(function () {
+		if ($(this).html() !== "") {
+			$(this).addClass("red");
+		}
+	});
 	var cells = [];
 	$(".sudoku tr").each(function () {
 		var line = [];
