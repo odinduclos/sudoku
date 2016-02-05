@@ -137,35 +137,15 @@
 	});
 
 	function check_horizontal(cells, cpt, cell) {
-		for (var i = 0; i < cells.length; i++) {
-			for (var j = 0; j < cells[i].length; j++) {
-			 	if (cells[i][j].val == cpt && cells[i][j].x == cell.x) {
-			 		return true;
-			 	}
-			 };
-		};
+		// qui suis-je?
 		return false;		
 	}
 	function check_vertical(cells, cpt, cell) {
-		for (var i = 0; i < cells.length; i++) {
-			for (var j = 0; j < cells[i].length; j++) {
-			 	if (cells[i][j].val == cpt && cells[i][j].y == cell.y) {
-			 		return true;
-			 	}
-			 };
-		};
+		// qui suis-je?
 		return false;		
 	}
 	function check_square(cells, cpt, cell) {
-		var ox = cell.x % 3; 
-		var oy = cell.y % 3;
-		for (var y = cell.y - oy; y < cell.y + oy && y < cells.length; y++) {
-			for (var x = cell.x - ox; x < cell.x + ox && x < cells[y].length; x++) {
-			 	if (cells[y][x].val == cpt) {
-			 		return true;
-			 	}
-			 };
-		};
+		// qui suis-je?
 		return false;		
 	}
 
